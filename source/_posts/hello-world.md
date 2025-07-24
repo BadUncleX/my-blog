@@ -11,12 +11,23 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
 ### Create a new post
 
 ``` bash
-$ hexo new "My New Post"
+hexo new post "Hello Hexo"
+# 生成 source/_posts/hello-hexo.md
 ```
 
 More info: [Writing](https://hexo.io/docs/writing.html)
 
-### Run server
+用你喜欢的编辑器编写 Markdown，常见 Front‑matter:
+
+```yaml
+title: Hello Hexo
+date: 2025-07-24 11:30:00
+tags: [Hexo, Blog]
+categories: 随笔
+
+```
+
+### 本地预览与测试
 
 ``` bash
 $ hexo server
