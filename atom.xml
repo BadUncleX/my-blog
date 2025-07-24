@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Baduncle Blog</title>
+  
+  <subtitle>we love clojure and AI</subtitle>
+  <link href="https://blog.baduncle.top/atom.xml" rel="self"/>
+  
+  <link href="https://blog.baduncle.top/"/>
+  <updated>2025-07-24T03:47:46.971Z</updated>
+  <id>https://blog.baduncle.top/</id>
+  
+  <author>
+    <name>Baduncle</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://blog.baduncle.top/2025/07/24/hello-world/"/>
+    <id>https://blog.baduncle.top/2025/07/24/hello-world/</id>
+    <published>2025-07-24T03:39:16.416Z</published>
+    <updated>2025-07-24T03:47:46.971Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo new post <span class="string">&quot;Hello Hexo&quot;</span></span><br><span class="line"><span class="comment"># 生成 source/_posts/hello-hexo.md</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><p>用你喜欢的编辑器编写 Markdown，常见 Front‑matter:</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">Hello</span> <span class="string">Hexo</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2025-07-24 11:30:00</span></span><br><span class="line"><span class="attr">tags:</span> [<span class="string">Hexo</span>, <span class="string">Blog</span>]</span><br><span class="line"><span class="attr">categories:</span> <span class="string">随笔</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><h3 id="本地预览与测试"><a href="#本地预览与测试" class="headerlink" title="本地预览与测试"></a>本地预览与测试</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+    <category term="hexo" scheme="https://blog.baduncle.top/tags/hexo/"/>
+    
+    <category term="tutorial" scheme="https://blog.baduncle.top/tags/tutorial/"/>
+    
+  </entry>
+  
+</feed>
