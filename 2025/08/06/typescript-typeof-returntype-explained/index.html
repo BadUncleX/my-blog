@@ -14,7 +14,7 @@
 <meta property="og:description" content="从 Java 开发者的视角深入解析 TypeScript 的 typeof 和 ReturnType 工具类型，通过对比和实际案例帮助理解编译时类型推导。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2025-08-06T06:30:00.000Z">
-<meta property="article:modified_time" content="2025-08-06T02:55:47.837Z">
+<meta property="article:modified_time" content="2025-08-06T16:42:33.423Z">
 <meta property="article:author" content="Baduncle">
 <meta property="article:tag" content="TypeScript">
 <meta property="article:tag" content="Java">
@@ -115,6 +115,31 @@
         <p>对于来自 Java 背景的开发者来说，TypeScript 类型系统的一些细微差别往往令人困惑，特别是 <code>typeof</code> 和 <code>ReturnType</code> 的理解。本文将通过清晰的对比和实际例子来详细解析这些概念。</p>
 <span id="more"></span>
 
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
+<li><a href="#%E6%A0%B8%E5%BF%83%E5%B7%AE%E5%BC%82%EF%BC%9ARuntime-vs-Compile-time">核心差异：Runtime vs Compile-time</a><ul>
+<li><a href="#Java-%E7%9A%84%E7%B1%BB%E5%9E%8B%E5%8F%8D%E5%B0%84%EF%BC%88Runtime%EF%BC%89">Java 的类型反射（Runtime）</a></li>
+<li><a href="#TypeScript-%E7%9A%84%E7%B1%BB%E5%9E%8B%E7%B3%BB%E7%BB%9F%EF%BC%88Compile-time%EF%BC%89">TypeScript 的类型系统（Compile-time）</a></li>
+</ul>
+</li>
+<li><a href="#%E7%90%86%E8%A7%A3-TypeScript-%E4%B8%AD%E7%9A%84-typeof">理解 TypeScript 中的 <code>typeof</code></a><ul>
+<li><a href="#%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E7%A4%BA%E4%BE%8B">基本使用示例</a></li>
+<li><a href="#%E9%AB%98%E7%BA%A7-typeof-%E7%94%A8%E6%B3%95">高级 typeof 用法</a></li>
+</ul>
+</li>
+<li><a href="#%E7%90%86%E8%A7%A3-ReturnType">理解 <code>ReturnType&lt;T&gt;</code></a><ul>
+<li><a href="#ReturnType-%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95">ReturnType 基本用法</a></li>
+<li><a href="#%E5%AF%B9%E6%AF%94%EF%BC%9AFunction-Type-vs-Return-Type">对比：Function Type vs Return Type</a></li>
+</ul>
+</li>
+<li><a href="#%E5%AE%9E%E9%99%85%E6%A1%88%E4%BE%8B%EF%BC%9ATanStack-Router">实际案例：TanStack Router</a></li>
+<li><a href="#Java-vs-TypeScript%EF%BC%9A%E5%85%B3%E9%94%AE%E5%B7%AE%E5%BC%82">Java vs TypeScript：关键差异</a><ul>
+<li><a href="#Java-%E7%AD%89%E4%BB%B7%E6%A8%A1%E5%BC%8F">Java 等价模式</a></li>
+</ul>
+</li>
+<li><a href="#%E9%AB%98%E7%BA%A7%E6%A8%A1%E5%BC%8F%EF%BC%9A%E7%B1%BB%E5%9E%8B%E5%AE%89%E5%85%A8%E7%9A%84-API-%E5%B7%A5%E5%8E%82">高级模式：类型安全的 API 工厂</a></li>
+<li><a href="#%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5">最佳实践</a></li>
+<li><a href="#%E6%80%BB%E7%BB%93">总结</a></li>
+</ul>
 <h2 id="核心差异：Runtime-vs-Compile-time"><a href="#核心差异：Runtime-vs-Compile-time" class="headerlink" title="核心差异：Runtime vs Compile-time"></a>核心差异：Runtime vs Compile-time</h2><h3 id="Java-的类型反射（Runtime）"><a href="#Java-的类型反射（Runtime）" class="headerlink" title="Java 的类型反射（Runtime）"></a>Java 的类型反射（Runtime）</h3><p>在 Java 中，类型信息在运行时通过反射可用：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Java - Runtime type checking</span></span><br><span class="line">List&lt;String&gt; list = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">Class&lt;?&gt; clazz = list.getClass();</span><br><span class="line"><span class="type">String</span> <span class="variable">typeName</span> <span class="operator">=</span> clazz.getSimpleName(); <span class="comment">// &quot;ArrayList&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Get type information dynamically</span></span><br><span class="line"><span class="type">Object</span> <span class="variable">obj</span> <span class="operator">=</span> getUserData();</span><br><span class="line"><span class="keyword">if</span> (obj <span class="keyword">instanceof</span> User) &#123;</span><br><span class="line">    <span class="type">User</span> <span class="variable">user</span> <span class="operator">=</span> (User) obj;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -186,7 +211,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://blog.baduncle.top/2025/08/06/typescript-typeof-returntype-explained/" data-id="cmdzhjiz4000h2qq962tp80jz" data-title="深入理解 TypeScript 的 typeof 和 ReturnType：从 Java 开发者视角" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://blog.baduncle.top/2025/08/06/typescript-typeof-returntype-explained/" data-id="cme07ceer0005g9q9geiba57d" data-title="深入理解 TypeScript 的 typeof 和 ReturnType：从 Java 开发者视角" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
