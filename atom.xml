@@ -35,13 +35,13 @@
     
     <category term="typescript" scheme="https://blog.baduncle.top/tags/typescript/"/>
     
-    <category term="react-19" scheme="https://blog.baduncle.top/tags/react-19/"/>
-    
     <category term="full-stack-engineering" scheme="https://blog.baduncle.top/tags/full-stack-engineering/"/>
     
     <category term="learning-path" scheme="https://blog.baduncle.top/tags/learning-path/"/>
     
     <category term="career-development" scheme="https://blog.baduncle.top/tags/career-development/"/>
+    
+    <category term="react-19" scheme="https://blog.baduncle.top/tags/react-19/"/>
     
     <category term="tanstack-ecosystem" scheme="https://blog.baduncle.top/tags/tanstack-ecosystem/"/>
     
@@ -80,17 +80,17 @@
     <category term="Programming" scheme="https://blog.baduncle.top/categories/Programming/"/>
     
     
-    <category term="react" scheme="https://blog.baduncle.top/tags/react/"/>
+    <category term="react-19" scheme="https://blog.baduncle.top/tags/react-19/"/>
     
-    <category term="performance-optimization" scheme="https://blog.baduncle.top/tags/performance-optimization/"/>
+    <category term="react" scheme="https://blog.baduncle.top/tags/react/"/>
     
     <category term="useCallback" scheme="https://blog.baduncle.top/tags/useCallback/"/>
     
     <category term="react-compiler" scheme="https://blog.baduncle.top/tags/react-compiler/"/>
     
-    <category term="react-19" scheme="https://blog.baduncle.top/tags/react-19/"/>
-    
     <category term="memoization" scheme="https://blog.baduncle.top/tags/memoization/"/>
+    
+    <category term="performance-optimization" scheme="https://blog.baduncle.top/tags/performance-optimization/"/>
     
     <category term="automatic-optimization" scheme="https://blog.baduncle.top/tags/automatic-optimization/"/>
     
@@ -117,9 +117,9 @@
     <category term="Programming" scheme="https://blog.baduncle.top/categories/Programming/"/>
     
     
-    <category term="javascript" scheme="https://blog.baduncle.top/tags/javascript/"/>
-    
     <category term="typescript" scheme="https://blog.baduncle.top/tags/typescript/"/>
+    
+    <category term="javascript" scheme="https://blog.baduncle.top/tags/javascript/"/>
     
     <category term="operators" scheme="https://blog.baduncle.top/tags/operators/"/>
     
@@ -152,11 +152,11 @@
     <category term="Programming" scheme="https://blog.baduncle.top/categories/Programming/"/>
     
     
-    <category term="react" scheme="https://blog.baduncle.top/tags/react/"/>
-    
     <category term="functional-programming" scheme="https://blog.baduncle.top/tags/functional-programming/"/>
     
     <category term="clojure-to-javascript" scheme="https://blog.baduncle.top/tags/clojure-to-javascript/"/>
+    
+    <category term="react" scheme="https://blog.baduncle.top/tags/react/"/>
     
     <category term="tanstack" scheme="https://blog.baduncle.top/tags/tanstack/"/>
     
@@ -187,13 +187,11 @@
     <category term="Programming" scheme="https://blog.baduncle.top/categories/Programming/"/>
     
     
-    <category term="arrow-functions" scheme="https://blog.baduncle.top/tags/arrow-functions/"/>
+    <category term="operators" scheme="https://blog.baduncle.top/tags/operators/"/>
     
     <category term="symbols" scheme="https://blog.baduncle.top/tags/symbols/"/>
     
     <category term="syntax" scheme="https://blog.baduncle.top/tags/syntax/"/>
-    
-    <category term="operators" scheme="https://blog.baduncle.top/tags/operators/"/>
     
     <category term="destructuring" scheme="https://blog.baduncle.top/tags/destructuring/"/>
     
@@ -202,6 +200,8 @@
     <category term="optional-chaining" scheme="https://blog.baduncle.top/tags/optional-chaining/"/>
     
     <category term="spread-operator" scheme="https://blog.baduncle.top/tags/spread-operator/"/>
+    
+    <category term="arrow-functions" scheme="https://blog.baduncle.top/tags/arrow-functions/"/>
     
     <category term="union-types" scheme="https://blog.baduncle.top/tags/union-types/"/>
     
@@ -229,15 +229,15 @@
     <category term="Programming" scheme="https://blog.baduncle.top/categories/Programming/"/>
     
     
+    <category term="typescript" scheme="https://blog.baduncle.top/tags/typescript/"/>
+    
     <category term="javascript" scheme="https://blog.baduncle.top/tags/javascript/"/>
     
-    <category term="typescript" scheme="https://blog.baduncle.top/tags/typescript/"/>
+    <category term="arrow-functions" scheme="https://blog.baduncle.top/tags/arrow-functions/"/>
     
     <category term="java-to-javascript" scheme="https://blog.baduncle.top/tags/java-to-javascript/"/>
     
     <category term="type-annotations" scheme="https://blog.baduncle.top/tags/type-annotations/"/>
-    
-    <category term="arrow-functions" scheme="https://blog.baduncle.top/tags/arrow-functions/"/>
     
     <category term="this-binding" scheme="https://blog.baduncle.top/tags/this-binding/"/>
     
@@ -270,9 +270,11 @@
     
     <category term="typescript" scheme="https://blog.baduncle.top/tags/typescript/"/>
     
-    <category term="tanstack-router" scheme="https://blog.baduncle.top/tags/tanstack-router/"/>
-    
     <category term="react" scheme="https://blog.baduncle.top/tags/react/"/>
+    
+    <category term="performance-optimization" scheme="https://blog.baduncle.top/tags/performance-optimization/"/>
+    
+    <category term="tanstack-router" scheme="https://blog.baduncle.top/tags/tanstack-router/"/>
     
     <category term="spa" scheme="https://blog.baduncle.top/tags/spa/"/>
     
@@ -285,8 +287,6 @@
     <category term="browser-api" scheme="https://blog.baduncle.top/tags/browser-api/"/>
     
     <category term="history-api" scheme="https://blog.baduncle.top/tags/history-api/"/>
-    
-    <category term="performance-optimization" scheme="https://blog.baduncle.top/tags/performance-optimization/"/>
     
     <category term="user-experience" scheme="https://blog.baduncle.top/tags/user-experience/"/>
     
@@ -311,19 +311,19 @@
     <category term="Programming" scheme="https://blog.baduncle.top/categories/Programming/"/>
     
     
-    <category term="javascript" scheme="https://blog.baduncle.top/tags/javascript/"/>
-    
     <category term="typescript" scheme="https://blog.baduncle.top/tags/typescript/"/>
+    
+    <category term="javascript" scheme="https://blog.baduncle.top/tags/javascript/"/>
     
     <category term="typeof" scheme="https://blog.baduncle.top/tags/typeof/"/>
     
-    <category term="type-safety" scheme="https://blog.baduncle.top/tags/type-safety/"/>
-    
-    <category term="utility-types" scheme="https://blog.baduncle.top/tags/utility-types/"/>
-    
     <category term="returntype" scheme="https://blog.baduncle.top/tags/returntype/"/>
     
+    <category term="type-safety" scheme="https://blog.baduncle.top/tags/type-safety/"/>
+    
     <category term="java-to-typescript" scheme="https://blog.baduncle.top/tags/java-to-typescript/"/>
+    
+    <category term="utility-types" scheme="https://blog.baduncle.top/tags/utility-types/"/>
     
     <category term="compile-time-types" scheme="https://blog.baduncle.top/tags/compile-time-types/"/>
     
